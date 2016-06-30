@@ -1,0 +1,26 @@
+$color-accent: #333;
+#logo, #logo_animated {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: auto; height: 50vh;
+  display: none;
+  transform: translate(-50%,-50%);
+  .light polygon, polygon.light { fill: tint($color-accent,25%); }
+  .medium polygon, polygon.medium { fill: $color-accent; }
+  .dark polygon, polygon.dark { fill: shade($color-accent,25%); }
+  &.animated { display: block;
+    polygon {
+      transform-origin: 50% 50%;
+      transform: scale(0);
+      animation: anima 300ms ease forwards;
+      @for $i from 1 through 13 {
+        &:nth-child(#{$i}) {
+          animation-delay: $i * 100ms;
+        }
+      }
+    }
+  }
+}
+@keyframes anima {
+  to { transform: scale(1); }
+}

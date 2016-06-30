@@ -1,0 +1,99 @@
+#logo, #logo_animated {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 50vh;
+  display: none;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+#logo .light polygon, #logo polygon.light, #logo_animated .light polygon, #logo_animated polygon.light {
+  fill: #666666;
+}
+#logo .medium polygon, #logo polygon.medium, #logo_animated .medium polygon, #logo_animated polygon.medium {
+  fill: #333;
+}
+#logo .dark polygon, #logo polygon.dark, #logo_animated .dark polygon, #logo_animated polygon.dark {
+  fill: #262626;
+}
+#logo.animated, #logo_animated.animated {
+  display: block;
+}
+#logo.animated polygon, #logo_animated.animated polygon {
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation: anima 300ms ease forwards;
+          animation: anima 300ms ease forwards;
+}
+#logo.animated polygon:nth-child(1), #logo_animated.animated polygon:nth-child(1) {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+#logo.animated polygon:nth-child(2), #logo_animated.animated polygon:nth-child(2) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+#logo.animated polygon:nth-child(3), #logo_animated.animated polygon:nth-child(3) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+#logo.animated polygon:nth-child(4), #logo_animated.animated polygon:nth-child(4) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+#logo.animated polygon:nth-child(5), #logo_animated.animated polygon:nth-child(5) {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+#logo.animated polygon:nth-child(6), #logo_animated.animated polygon:nth-child(6) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+#logo.animated polygon:nth-child(7), #logo_animated.animated polygon:nth-child(7) {
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+#logo.animated polygon:nth-child(8), #logo_animated.animated polygon:nth-child(8) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+#logo.animated polygon:nth-child(9), #logo_animated.animated polygon:nth-child(9) {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
+#logo.animated polygon:nth-child(10), #logo_animated.animated polygon:nth-child(10) {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+#logo.animated polygon:nth-child(11), #logo_animated.animated polygon:nth-child(11) {
+  -webkit-animation-delay: 1100ms;
+          animation-delay: 1100ms;
+}
+#logo.animated polygon:nth-child(12), #logo_animated.animated polygon:nth-child(12) {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+#logo.animated polygon:nth-child(13), #logo_animated.animated polygon:nth-child(13) {
+  -webkit-animation-delay: 1300ms;
+          animation-delay: 1300ms;
+}
+
+@-webkit-keyframes anima {
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes anima {
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}

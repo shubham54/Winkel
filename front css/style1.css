@@ -1,0 +1,18 @@
+body {
+  background: linear-gradient(to left, #16222A , #3A6073);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bubble {
+  width: 1em;
+  position:inherit;
+  opacity: 0;
+}
+
+#ujelly {
+  width: 20em;
+  margin: 2em;
+}
